@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="h-100 w-100" style="
+				box-sizing: border-box;
+				position: relative;
+				background-color: #FAFCFF;
+			">
+        <div class="header-3-3 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="home.html" class="text-decoration-none d-flex justify-content-center align-items-center">
+                    <img width="50" src="../images/logo.svg" alt="">
+                    <p class="my-3">Smarket</p>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item active position-relative">
+                            <a class="nav-link" style="color: #243142;" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hr">
+                <hr style="
+							border-color: #F4F4F4;
+							background-color: #F4F4F4;
+							opacity: 1;
+							margin: 0 !important;
+						" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM: START -->
+    <div class="h-100 w-100 mt-2 header-3-3 container-xxl mx-auto p-0">
+        <div class="d-flex justify-content-between align-items-start hero">
+            <!-- Left Column -->
+            <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+                <h1 class="title-text-big">
+                    Contact Information
+                </h1>
+                <p class="text-caption">
+                    Fill up the form and our team will det back to <br> you within 24 hours.
+                </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column d-flex justify-content-center justify-content-lg-start text-left">
+                <form action="contact_submit.php" method="POST">
+                    <h1>Contact Us</h1>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" name="nama" id="nama" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" id="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone</label>
+                        <input type="text" name="phone" id="phone" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" name="contact" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <!-- <div class="right-column d-flex justify-content-center justify-content-lg-start text-center">
+            
+
+            </div> -->
+            <!--  -->
+        </div>
+
+    </div>
+    <!-- FORM: END -->
+
+    <!-- FOOTER: START -->
+    <footer class="section-footer h-100 w-100 mt-5 header-3-3 container-xxl mx-auto p-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <p class="copyright text-center">2022 Copyright Smarket - All Right Reserved <br> Universitas Bina Sarana Informatika</p>
+    </footer>
+    <!-- FOOTER: END -->
+</body>
+
+</html>
